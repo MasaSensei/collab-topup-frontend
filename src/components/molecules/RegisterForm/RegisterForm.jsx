@@ -31,7 +31,7 @@ const RegisterForm = () => {
         type="password"
         name="password"
         placeholder="Masukan password yang sama"
-        id="password"
+        id="konfirmasi password"
       />
       <p className="text-center text-sm mb-4">
         Sudah Punya Akun?
