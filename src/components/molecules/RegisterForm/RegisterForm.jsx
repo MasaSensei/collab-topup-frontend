@@ -36,7 +36,7 @@ const RegisterForm = () => {
       <p className="text-center text-sm mb-4">
         Sudah Punya Akun?
         <span className="text-blue-500 hover:underline text-blue-700">
-          <Link to="/"> Sign In </Link>
+          <Link to="/login"> Sign In </Link>
         </span>
       </p>
       <div className="mb-6">
