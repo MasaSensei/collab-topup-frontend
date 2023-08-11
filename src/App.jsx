@@ -1,18 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Button from "./components/atoms/Button";
 
 const App = () => {
   return (
     <section className="flex justify-center items-center min-h-screen">
-      <div className=" container border border-gray-300 max-w-full w-[30%] flex justify-center">
+      <div className=" container border border-gray-300 max-w-full w-[80%] sm:w-[40%] xl:w-[30%] flex-shrink-0 flex justify-center">
         <div className="w-full max-w-xl p-8">
-          <h1 className="text-3xl text-blue-500 font-bold pb-4">Topup Store</h1>
+          <h1 className="text-3xl text-blue-500 font-bold pb-8">Masuk</h1>
           <form action="">
             <div className="mb-6">
               <label
                 htmlFor="email"
                 className="block text-slate-700 text-sm font-bold mb-2"
               >
-                Email
+                Login
               </label>
               <input
                 type="text"
@@ -29,8 +31,8 @@ const App = () => {
               >
                 Password
                 <span className="float-right">
-                  <Link to="/login" className="text-blue-500">
-                    Lupa Passowrd?
+                  <Link to="/" className="text-blue-500">
+                    Lupa Passoword?
                   </Link>
                 </span>
               </label>
@@ -43,10 +45,14 @@ const App = () => {
               />
             </div>
             <div className="mb-6">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
-                Masuk
-              </button>
+              <Button>Masuk</Button>
             </div>
+            <p className="text-center text-sm">
+              Belum punya akun?{" "}
+              <span className="text-blue-500 hover:underline text-blue-700">
+                <Link to="/register">Buat akun disini </Link>
+              </span>
+            </p>
           </form>
         </div>
       </div>
