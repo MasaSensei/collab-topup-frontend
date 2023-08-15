@@ -36,9 +36,9 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <div className="py-3 flex justify-center px-32 mx-auto max-w-1440px">
+      {/* <div className="py-3 flex justify-center px-32 mx-auto max-w-1440px">
         <div className="header"></div>
-      </div>
+      </div> */}
     </header>
   );
 };

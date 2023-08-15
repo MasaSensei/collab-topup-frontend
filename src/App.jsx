@@ -1,5 +1,6 @@
 import React from "react";
 import "./../src/App.css";
+import Carousel from "./components/organism/Carousel/Carousel";
 import Navbar from "./components/organism/Navbar/Navbar";
 
 const App = () => {
@@ -8,17 +9,10 @@ const App = () => {
       <Navbar />
       <div className="w-full" style={{ height: "77px" }}></div>
       <main className="">
-        <div className="block">
-          <div className="relative pt-4">
-            <div className="z-2 w-full rounded-lg">
-              <div className="rounded-lg relative">
-                <div className="absolute h-87px sm:h-40 w-full bg-slate-500 rounded-lg skeleton">
-                  <h1>Testing</h1>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div>
+          <Carousel />
         </div>
+        <h1>Test</h1>
       </main>
     </div>
   );
