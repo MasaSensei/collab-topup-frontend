@@ -8,6 +8,10 @@ import RegisterPage from "./pages/RegisterPage/RegisterPage";
 
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <App />,
+  },
+  {
     path: "/Login",
     element: <LoginPage />,
   },

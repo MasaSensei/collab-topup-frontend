@@ -1,0 +1,17 @@
+.border-line::before,
+.border-line::after {
+  content: " ";
+  display: inline-block;
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  vertical-align: middle;
+}
+
+.border-line::before {
+  margin-right: 0.5em;
+}
+
+.border-line::after {
+  margin-left: 0.5em;
+}
