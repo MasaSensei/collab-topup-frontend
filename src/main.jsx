@@ -1,12 +1,16 @@
+import "font-awesome/css/font-awesome.min.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import LoginPage from "./pages/LoginPage/LoginPage.jsx";
+import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import RegisterPage from "./pages/RegisterPage/RegisterPage";
+import "./index.css";
+import { LoginPage, MasterMenu, MasterRole, RegisterPage } from "./pages";
+import { Provider } from "./store/provider/provider";
+// import LoginPage from "./pages/LoginPage/LoginPage.jsx";
+// import RegisterPage from "./pages/RegisterPage/RegisterPage";
+// import MasterMenu from "./pages/MasterMenu/MasterMenu";
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
     path: "/Login",
     element: <LoginPage />,
@@ -15,10 +19,20 @@ const router = createBrowserRouter([
     path: "/register",
     element: <RegisterPage />,
   },
+  {
+    path: "/admin/menu",
+    element: <MasterMenu />,
+  },
+  {
+    path: "/admin/role",
+    element: <MasterRole />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
