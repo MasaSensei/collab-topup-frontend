@@ -27,7 +27,7 @@ const RegisterForm = () => {
         id="password"
       />
       <InputForm
-        label="Konfirmasi Passowrd"
+        label="Konfirmasi Password"
         type="password"
         name="password"
         placeholder="Masukan password yang sama"

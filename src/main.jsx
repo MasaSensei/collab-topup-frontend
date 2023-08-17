@@ -2,7 +2,7 @@ import "font-awesome/css/font-awesome.min.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter } from "react-router-dom";
-import App from "./App";
+import LandingPage, { App } from "./App";
 import "./index.css";
 import { LoginPage, MasterMenu, MasterRole, RegisterPage } from "./pages";
 import { Provider } from "./store/provider/provider";
@@ -11,6 +11,10 @@ import { Provider } from "./store/provider/provider";
 // import MasterMenu from "./pages/MasterMenu/MasterMenu";
 
 export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
   {
     path: "/Login",
     element: <LoginPage />,
