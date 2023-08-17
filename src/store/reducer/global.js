@@ -2,6 +2,8 @@ const initGlobal = {
   isLoading: false,
   isLogin: true,
   sideBarOpen: true,
+  activeUrl: "",
+  menuUser: [],
 };
 
 const globalReducer = (state, payload) => {
@@ -20,6 +22,16 @@ const globalReducer = (state, payload) => {
       return {
         ...state,
         sideBarOpen: payload.action,
+      };
+    case "SET_ACTIVE_URL":
+      return {
+        ...state,
+        activeUrl: payload.action,
+      };
+    case "SET_MENU_USER":
+      return {
+        ...state,
+        menuUser: payload.action,
       };
     default:
       return state;
