@@ -12,6 +12,10 @@ import { Provider } from "./store/provider/provider";
 
 export const router = createBrowserRouter([
   {
+    path: "/",
+    element: <App />,
+  },
+  {
     path: "/Login",
     element: <LoginPage />,
   },
