@@ -1,3 +1,4 @@
+import Paragraph from "../../components/atoms/Paragraph/Paragraph";
 import MainSidebar from "../../components/molecules/MainSidebar/MainSidebar";
 import TopbarAdmin from "../../components/molecules/TopbarAdmin/TopbarAdmin";
 
@@ -16,9 +17,10 @@ const MasterRole = () => {
               <div className="sm:px-6 w-full">
                 <div className="px-4 md:px-10 py-4 md:py-2">
                   <div className="flex items-center justify-between">
-                    <p className="focus:outline-none text-base  lg:text-2xl font-bold leading-normal text-gray-800">
+                    <Paragraph>Role Master</Paragraph>
+                    {/* <p className="focus:outline-none text-base lg:text-2xl font-bold leading-normal text-gray-800">
                       Role Master
-                    </p>
+                    </p> */}
                     <div className="py-3 px-4 flex items-center text-sm font-medium leading-none text-gray-600 bg-gray-200 hover:bg-gray-300 cursor-pointer rounded">
                       <p>Sort By:</p>
                       <select
@@ -40,23 +42,17 @@ const MasterRole = () => {
                 <div className="shadow-sm mt-2 bg-white py-4 md:py-7 px-4 md:px-8 xl:px-10 rounded-lg">
                   <div className="sm:flex items-center justify-between">
                     <div className="flex items-center">
-                      <a
-                        className="rounded-full focus:outline-none focus:ring-2  focus:bg-indigo-50 focus:ring-indigo-800"
-                        href=" javascript:void(0)">
+                      <a className="rounded-full focus:outline-none focus:ring-2  focus:bg-indigo-50 focus:ring-indigo-800">
                         <div className="py-2 px-8 bg-indigo-100 text-indigo-700 rounded-full">
                           <p>All</p>
                         </div>
                       </a>
-                      <a
-                        className="rounded-full focus:outline-none focus:ring-2 focus:bg-indigo-50 focus:ring-indigo-800 ml-4 sm:ml-8"
-                        href="javascript:void(0)">
+                      <a className="rounded-full focus:outline-none focus:ring-2 focus:bg-indigo-50 focus:ring-indigo-800 ml-4 sm:ml-8">
                         <div className="py-2 px-8 text-gray-600 hover:text-indigo-700 hover:bg-indigo-100 rounded-full ">
                           <p>Done</p>
                         </div>
                       </a>
-                      <a
-                        className="rounded-full focus:outline-none focus:ring-2 focus:bg-indigo-50 focus:ring-indigo-800 ml-4 sm:ml-8"
-                        href="javascript:void(0)">
+                      <a className="rounded-full focus:outline-none focus:ring-2 focus:bg-indigo-50 focus:ring-indigo-800 ml-4 sm:ml-8">
                         <div className="py-2 px-8 text-gray-600 hover:text-indigo-700 hover:bg-indigo-100 rounded-full ">
                           <p>Pending</p>
                         </div>
